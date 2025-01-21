@@ -1,79 +1,176 @@
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85vw;
-    margin: auto;
-    font-size: medium;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+  margin: auto;
+  font-size: medium;
 }
-.leftnav{
-    display: flex;
-    gap: 16px;
+.leftnav {
+  display: flex;
+  gap: 16px;
 }
-.rightnav{
-    display: flex;
-    align-items: center;
-    gap: 16px;
+.rightnav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
-.btn{
-    padding: 16px;
-    background-color: #3872c9;
-    border: none;
-    color: white;
-    font-weight: 600;
-}
-.hero{
-    background-color: #e9ecef;
-}
-.heroside{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70vw;
-    margin: auto;
-}
-.heromid h1{
-    opacity: 70%;
-}
-.heromid p{
-    opacity: 50%;
-}
-
-.heroele{
-    display: flex;
-    gap: 1rem;  
-}
-.btn1{
-    padding: 12px;
-    font-size:12px;
-    font-weight: 600;
-    background-color: #3872c9;
-    color:white;
-    border: none;
-}
- .btn2{
-    padding: 12px;
-    font-size:12px;
-    font-weight: 600;
-    background-color: white;
-    color: #05373c;
+.btn {
+  padding: 16px;
+  background-color: #3872c9;
   border: none;
+  color: white;
+  font-weight: 600;
 }
-.imageside{
-   object-fit: cover;
+.hero {
+  background-color: #e9ecef;
+}
+.heroside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  margin: auto;
+}
+
+.heromid h1 {
+  opacity: 70%;
+  line-height: 2rem;
+  
+}
+.heromid p {
+  opacity: 50%;
+  line-height: 1.5rem;
+
 
 }
+
+.heroele {
+  display: flex;
+  gap: 1rem;
+  margin-top: 50px;
+}
+.btn1 {
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #3872c9;
+  color: white;
+  border: none;
+
+}
+.btn2 {
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: white;
+  color: #05373c;
+  border: none;
+
+}
+/* .imageside {
+  object-fit: cover;
+} */
 .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.babysection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+.Each_item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.item1 {
+  border: 1px solid #797d7d;
+  border-radius: 50%;
+  color: #11afbf;
+  padding: 9px;
+}
+.Each_item h1 {
+  font-size: 28px;
+  opacity: 70%;
+}
+.Each_item p {
+  font-size: 17px;
+  opacity: 40%;
+}
+.icon2 {
+  color: red;
+}
+.icon3 {
+  color: blue;
+}
+.icon4 {
+  color: brown;
+}
+.blog_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.blog-side1 {
+  /* border: 1px solid black; */
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+-webkit-box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+-moz-box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+  height: auto;
+  width: 300px;
+}
+
+.blog_side2 {
+    /* border: 1px solid black; */
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+    -webkit-box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+    -moz-box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+    height: auto;
+    width: 300px;
   }
-  .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+  .blog_side3 {
+    /* border: 1px solid black; */
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+    -webkit-box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+    -moz-box-shadow: 17px -10px 7px 0px rgba(76,73,73,0.31);
+    height: 300px;
+    width: 300px;
+    background-color: #219acc;
+    color: white;
+    padding: 10px 15px;
   }
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.blog_side3 h3{
+    font-size: 30px;
+}
+.blog_side3 p{
+    font-size: 17px;
+}
