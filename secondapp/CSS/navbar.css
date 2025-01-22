@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    margin: auto;
+    font-size: medium;
+  
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .leftnav {
+    display: flex;
+    gap: 16px;
+  }
+  .rightnav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .btn {
+    padding: 16px;
+    background-color: #3872c9;
+    border: none;
+    color: white;
+    font-weight: 600;
+  }

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.portfolio_section {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio_section h1 {
+  /* color: #2299d4; */
+  font-size: 45px;
+}
+.portfolio_section p {
+  opacity: 60%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+.portfolio_section span {
+  color: #2299d4;
+}
+.portfolio_darksection {
+  display: flex;
+  gap: 2rem;
+  margin-top: 40px;
+}
+.portfolio_darksection div {
+  border: 1px solid rgb(184, 183, 183);
+  padding: 15px;
+  border-radius: 8px;
+  /* box-shadow: 13px -11px 10px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 13px -11px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px -11px 10px 0px rgba(0,0,0,0.75); */
+}
+.para {
+  color: #2299d4;
+}
