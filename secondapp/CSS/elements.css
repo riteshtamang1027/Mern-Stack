@@ -1,0 +1,44 @@
+.fixed_navbar {
+  position: fixed;
+  color: white !important;
+  width: 100% !important;
+}
+.my_contain {
+  padding-top: 60px;
+  text-align: justify;
+  width: 80vw;
+  margin: auto;
+  opacity: 70%;
+  font-size: 20px;
+  line-height: 1.7rem;
+}
+.sticky_realtive {
+  position: relative;
+  height: 100vh;
+  background-color: lightslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i_am_sticky {
+  position: sticky;
+  height: 100px;
+  width: 100px;
+  top: 70vh;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+input{
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid gainsboro;   
+}
+input:focus{
+    border: 2px solid rgb(171, 141, 141);
+}

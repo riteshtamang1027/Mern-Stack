@@ -9,11 +9,13 @@ body {
     width: 85vw;
     margin: auto;
     font-size: medium;
-  
+    background-color: black;
+    z-index: 999;
   }
   a{
     text-decoration: none;
-    color: black;
+    padding: 17px;
+    color: white;
   }
   .leftnav {
     display: flex;

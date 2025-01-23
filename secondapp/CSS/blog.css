@@ -1,0 +1,48 @@
+.parent_area{
+    width: 80vw;
+    margin: auto;
+    margin-top: 70px;
+}
+.parent_section {
+  width: 600px;
+  height: 340px;
+  background-color: gray;
+  position: relative;
+  background-image: url("../image/img1.jpg");
+  background-repeat: no-repeat;
+ background-position: center;
+ /* max-width: fit-content; */
+
+}
+.child_section {
+  height: 60px;
+  width: 200px;
+  background-color: black;
+  position: absolute;
+  color: white;
+  /* top: 20px; */
+  /* left: 20px; */
+  right: -70px;
+  bottom: -30px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 70%;
+}
+.child_section01 {
+  height: 60px;
+  width: 200px;
+  background-color: black;
+  position: absolute;
+  color: white;
+  opacity: 70%;
+  left: -70px;
+  top: -30px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
