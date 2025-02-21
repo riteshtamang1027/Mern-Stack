@@ -32,13 +32,13 @@
   justify-content: center;
   border-radius: 50%;
 }
-input{
-    padding: 12px 10px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    border: 1px solid gainsboro;   
+input {
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid gainsboro;
 }
-input:focus{
-    border: 2px solid rgb(171, 141, 141);
+input:focus {
+  border: 2px solid rgb(196, 128, 128);
 }
