@@ -67,6 +67,12 @@ export const getSingleStudentById = async (req, res) => {
 //   3. update sutdent data
 export const updateStudentById = async (req, res) => {
   try {
+    const ExistName = await Students.findOne(req.body);
+    if(ExistName){
+      return res.status(200).json({
+        message:"This name already exist.",
+      })
+    }
     const updateStudent = await Students.findByIdAndUpdate(
       req.params.id,
       req.body,

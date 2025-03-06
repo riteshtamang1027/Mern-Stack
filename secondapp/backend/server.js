@@ -1,7 +1,9 @@
 import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
-import student_router from './routes/student_router.js'
+import student_router from './routes/student_router.js';
+import userRoute from './routes/userRoute.js';
+
 
 const app = express();
 app.use(express.json());
@@ -16,6 +18,7 @@ try {
 }
 
 app.use("/Students", student_router);
+app.use("/User",userRoute)
 
 app.get("/", (req, res) => {
   res.send("Student backend server running.");
