@@ -1,0 +1,92 @@
+body {
+ padding: 0px;
+ margin: 0px;
+}
+
+/* whole navbar section */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   padding: 2px 8rem;
+  border-bottom: 1px solid black;
+  gap: 20px;
+  font-size: 26px;
+}
+/* navbar items section css */
+.navbar .itemdiv {
+  font-size: 24px;
+  display: flex;
+  gap: 64px;
+}
+.navbar .logop{
+    font-weight: bold;
+}
+.navbar .itemdiv a{
+    text-decoration: none;
+    color: rgb(18, 47, 235);
+    background-color: rgb(215, 212, 212);
+    padding: 2px 6px;
+    border-radius: 8px;
+
+
+}
+.navbar .itemdiv button{
+    text-decoration: none;
+    color: rgb(18, 47, 235);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 2px 6px;
+    /* font-weight: bold;   */
+    border: 1px solid rgb(55, 136, 202);
+    border-radius: 8px;
+    transition: all 0.5s linear;
+
+
+}
+
+.navbar .itemdiv button:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(54, 95, 190);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 2px 6px;
+    /* font-weight:400;   */
+    border: 1px solid rgb(55, 136, 202);
+    border-radius: 8px;
+    /* border-radius: 8px; */
+}
+
+.navbar .itemdiv a:hover{
+    text-decoration: none;
+    color: rgb(3, 135, 39);
+    background-color: gray;
+    /* border-bottom: 2px solid green;  */
+    transition: all 0.3s linear;
+}
+
+h1{
+     padding: 2px 8rem;
+}
+/* full menu style */
+.menu_main_container {
+  /* border: 1px solid black; */
+  padding: 2px 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_main_container .first_menu ul{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    /* flex-wrap: wrap; */
+    padding: 1rem 2rem;
+    gap: 20px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.menu_main_container .first_menu ul li a{
+        text-decoration: none;
+
+}
