@@ -15,49 +15,56 @@ body {
   box-shadow: 1px 9px 5px 0px rgba(134, 124, 124, 0.75);
   -webkit-box-shadow: 1px 9px 5px 0px rgba(134, 124, 124, 0.75);
   -moz-box-shadow: 1px 9px 5px 0px rgba(134, 124, 124, 0.75);
+  position: sticky;
+  top: 0px;
+  height: screen;
+  background-color: aliceblue;
+  z-index: 50;
 }
 /* navbar items section css */
 .navbar .itemdiv {
   font-size: 24px;
   display: flex;
-  gap: 64px;
+  gap: 32px;
 }
 .navbar .logop {
   font-weight: bold;
 }
 .navbar .logop .css {
-  color: rgb(32, 32, 234);
+  color: rgb(55, 136, 202);
 }
 .navbar .itemdiv a {
   text-decoration: none;
-  color: rgb(51, 73, 216);
-  background-color: rgb(231, 226, 226);
-  padding: 2px 6px;
+  color: rgb(55, 136, 202);
+  background-color: rgb(237, 232, 232);
+  padding: 4px 8px;
   border-radius: 8px;
+  transition: all 500ms linear;
 }
 .navbar .itemdiv button {
   text-decoration: none;
-  color: rgb(18, 47, 235);
+  color: white;
+  background-color: rgb(55, 136, 202);
   cursor: pointer;
   font-size: 18px;
-  padding: 2px 6px;
-  /* font-weight: bold;   */
+  padding: 4px 8px;
   border: 1px solid rgb(55, 136, 202);
   border-radius: 8px;
-  transition: all 0.5s linear;
+  transition: all 500ms linear;
+
+  
 }
 
 .navbar .itemdiv button:hover {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(54, 95, 190);
+  background-color: white;
+text-decoration: none;
+  color: rgb(55, 136, 202);
   cursor: pointer;
   font-size: 18px;
-  padding: 2px 6px;
-  /* font-weight:400;   */
+  padding: 4px 8px;
   border: 1px solid rgb(55, 136, 202);
   border-radius: 8px;
-  /* border-radius: 8px; */
+  transition: all 0.5s linear;
 }
 
 .navbar .itemdiv a:hover {
@@ -69,58 +76,10 @@ body {
 }
 
 /* hero section ifrem */
-.iframe1{
-  width: 100vw;
-  height: 100vh;
-  
-}
 
-h1 {
-  padding: 2px 8rem;
-}
-/* full menu style */
-.menu_main_container {
-  padding: 2px 8rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu_main_container .first_menu {
-  border: 1px solid rgb(48, 83, 197);
-  padding: 1rem 2rem;
-  border-radius: 8px;
-}
-.menu_main_container .first_menu b {
-  font-size: 24px;
-}
-.menu_main_container .first_menu ul {
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
-  font-size: large;
-  gap: 20px;
-}
-.menu_main_container .first_menu ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-/* Second best menu */
-
-.menu_main_container .second_menu {
-  border: 1px solid rgb(48, 83, 197);
-  padding: 1rem 2rem;
-  border-radius: 8px;
-}
-.menu_main_container .second_menu b {
-  font-size: 24px;
-}
-.menu_main_container .second_menu ol {
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
-  font-size: large;
-  gap: 20px;
-}
-.menu_main_container .second_menu ol li a {
-  text-decoration: none;
-  color: black;
+.myFrame {
+  width: 100%;
+  height: 400px;
+  border: none;
+  overflow: hidden; 
 }
