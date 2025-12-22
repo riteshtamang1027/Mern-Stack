@@ -1,4 +1,6 @@
-
+body {
+  margin: 0;
+}
 .dishes {
   font-size: 32px;
   font-weight: bold;
@@ -27,14 +29,26 @@
   font-weight: bold;
 }
 
+.itemslist{
+  display: flex;
+  flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+row-gap: 2rem;
+  
+  
+}
+
  .itemdiv{
-    width: 20vw; 
+    width: 24vw; 
     overflow: hidden;
     border-radius: 16px;
+    border: 1px solid black;
+
    
  }
  .imageDiv{
-     width: 20vw; 
+     width: 24vw; 
     height: 30vh;
     overflow: hidden;
     border-radius: 16px;
@@ -43,7 +57,7 @@
  }
 
 .itemdiv img{
-    width: 20vw;
+    width: 24vw;
     height: 30vh;
     object-fit: cover;
     border-radius: 16px;
@@ -53,7 +67,6 @@
 .itemdiv img:hover{
     cursor: pointer;
     scale: 1.1;
-
 }
 
 .itemdiv .iteminfo{
@@ -80,5 +93,11 @@
     color: rgb(220, 144, 4);
     font-size: 19px;
 
+}
+.myFrame {
+  width: 100%;
+  height: auto;
+  border: none;
+  overflow: hidden; 
 }
 

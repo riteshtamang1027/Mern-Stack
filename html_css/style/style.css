@@ -33,14 +33,7 @@ body {
 .navbar .logop .css {
   color: rgb(55, 136, 202);
 }
-.navbar .itemdiv a {
-  text-decoration: none;
-  color: rgb(55, 136, 202);
-  background-color: rgb(237, 232, 232);
-  padding: 4px 8px;
-  border-radius: 8px;
-  transition: all 500ms linear;
-}
+
 .navbar .itemdiv button {
   text-decoration: none;
   color: white;
@@ -67,19 +60,41 @@ text-decoration: none;
   transition: all 0.5s linear;
 }
 
-.navbar .itemdiv a:hover {
+
+ .itemdiv a {
+  position: relative;
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  background-color: rgb(71, 150, 240);
-  /* border-bottom: 2px solid green;  */
-  transition: all 0.3s linear;
+  color: black;
+  padding: 4px;
 }
+
+.itemdiv a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  border-bottom: 2px solid rgb(46, 105, 213);
+  transition:  0.5s linear;
+}
+
+.itemdiv a:hover::before {
+  width: 100%;
+}
+
+.itemdiv a:hover{
+    color: rgb(46, 105, 213);
+
+}
+
+
+
 
 /* hero section ifrem */
 
 .myFrame {
   width: 100%;
-  height: 400px;
+  /* height: auto; */
   border: none;
   overflow: hidden; 
 }
