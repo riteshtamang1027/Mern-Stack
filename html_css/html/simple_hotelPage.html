@@ -51,25 +51,27 @@
   src="../html/menuItem.html"
   frameborder="0"
   width="100%"
+  height="100%"
   scrolling="no"
 ></iframe>
 
 <script>
   const iframe = document.getElementById("menuFrame");
 
-  iframe.onload = function () {
+  function resizeIframe() {
     iframe.style.height =
-      iframe.contentWindow.document.body.scrollHeight + "px";
-  };
+      iframe.contentWindow.document.documentElement.scrollHeight + "px";
+  }
+
+  iframe.addEventListener("load", () => {
+    resizeIframe();
+    setTimeout(resizeIframe, 1000); // handles images
+    setTimeout(resizeIframe, 1000); // safety
+  });
 </script>
 
 
-    <!-- <iframe
-      class="myFrame"
-      src="../html/index.html"
-      width="100%"
-      scrolling="no"
-    ></iframe> -->
+<iframe src="../html/category.html" width="100%" scrolling="no" frameborder="0"></iframe>
+
   </body>
-  <!-- <footer>This is footer</footer> -->
 </html>

@@ -14,3 +14,57 @@
   
 </body>
 </html>
+
+
+<!-- 
+Display -> it controls how an element is rendered on the page. 
+does it take full width? does it go to new line?
+can ir have width/height? does it take padding or margin?
+
+display:block-> e.g. div, p, h1-h6, header, footer, main
+  -it starts on a new line.
+    -takes 100% width by default.
+    -you can set height, width, margin, padding
+
+display:inline-> e.g. a, em, strong, span 
+      -does not start in new line
+      -takes only content width
+      -cannot set height, width
+      -top and bottom margin are ignored
+      -padding works but doesn't fully support it
+
+display: inline-block
+        -stays inline, pros of inline inherit (lincha) and cons chia replace garcha by block
+        -does not start in new line
+        -takes only content width
+        -can set height, width, width, margin, padding
+
+display: none-> kei pani dekhaudaina, padding margin, height, width remove garxa
+
+
+display: flex -> it gives us flexibility/flexible box layout
+      - it handles only 1D at a time.
+      - Turns an element into flex container
+      - It's children becomes flex item
+      - default behaviour
+            flex-direction: row;
+            justify-contain: flex-start: //this is usde for row.
+            align-items: stretch; //this is used ofor column
+                 
+            output: item| item| item
+
+            flex-direction: row | column;
+            justify-content: flex-start | center| space-between | space-around;
+            align-items: stretch | center | flex-start | flex-end;
+
+            flex-wrap: -> should row overlfow or not. wrap|nowrap
+            default : flex-wrap: nowrap:
+                 - it tells a flex container whether items should stay on one line(nowrap) or flow onto multiple lines(wrap) when they run out of space. 
+                 
+                 
+                 
+-->
+
+
+
+

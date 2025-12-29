@@ -57,6 +57,7 @@ row-gap: 2rem;
  }
 
 .itemdiv img{
+  display: inline-block;
     width: 24vw;
     height: 30vh;
     object-fit: cover;
