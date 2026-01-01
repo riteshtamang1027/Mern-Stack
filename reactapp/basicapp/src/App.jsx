@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LoginPage from "./components/loginpage";
 
 export default function App() {
   const [isAdding, setisAdding] = useState(false);
@@ -7,7 +8,7 @@ export default function App() {
   return (
     <div
       className="w-full
-    flex items-center justify-center"
+    flex items-center justify-center flex-col gap-8"
     >
       <div className="  border w-max mt-12 p-4 rounded-xl bg-gray-200 shadow-2xl space-y-4">
         {/* skills list section */}
@@ -68,6 +69,8 @@ export default function App() {
           </div>
         )}
       </div>
+
+      <LoginPage/>
     </div>
   );
 }
