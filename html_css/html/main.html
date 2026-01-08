@@ -11,7 +11,6 @@
         flex-direction: column;
         /* gap: 1rem; */
         min-height: 100vh;
-       
       }
       .headre {
         background-color: rgb(134, 72, 204);
@@ -19,7 +18,7 @@
         color: white;
         text-align: center;
       }
-      .navbar{
+      .navbar {
         background-color: rgb(64, 201, 96);
         padding: 1rem;
         color: white;
@@ -32,22 +31,89 @@
         color: white;
         flex: 2;
       }
-      .footer{
+      .footer {
         background-color: rgb(204, 158, 72);
         padding: 1rem;
         color: white;
       }
-      .side_bar{
+      .side_bar {
         background-color: rgb(187, 121, 55);
         border: 1px solid gray;
         padding: 1rem;
         width: 24vw;
-
       }
-      .mainSec{
+      .mainSec {
         background-color: bisque;
         padding: 1rem;
-        flex:1;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .loginpage {
+        border: 1px solid gray;
+        width: max-content;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        color: black;
+      }
+      .loginpage h2 {
+        padding: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .username {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 18px;
+        outline: hidden;
+      }
+      .username input {
+        padding: 8px;
+        border: 1px solid gray;
+        border-radius: 6px;
+      }
+      
+.username input:focus {
+  outline: none;
+  box-shadow: none; /* optional, removes glow in some browsers */
+}
+
+      .pass {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 18px;
+      }
+      .pass input {
+        padding: 8px;
+        border: 1px solid gray;
+        border-radius: 6px;
+      }
+      .btnLogin {
+        padding: 8px 12px;
+        width: min-content;
+        border: 1px solid rgb(254, 254, 254);
+        border-radius: 8px;
+        background-color: rgb(76, 136, 215);
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .logindiv {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .checkbox {
+        display: flex;
+        align-items: center;
+      }
+      .checkbox input {
+        width: 14px;
+        height: 14px;
       }
     </style>
   </head>
@@ -56,14 +122,39 @@
       <header class="headre">
         ritesh lama @123456789 who is dedicated to learn website createin!.
       </header>
-      <nav class="navbar">
-
-
-      </nav>
+      <nav class="navbar"></nav>
 
       <div class="content">
         <aside class="side_bar">sidebar</aside>
-        <main class="mainSec">main</main>
+        <main class="mainSec">
+          <form action="" class="loginpage">
+            <h2>Login</h2>
+
+            <!-- username section -->
+            <div class="logindiv">
+              <div class="username">
+                <label for="">username:</label>
+                <input type="text" name="" id="" />
+              </div>
+              <!-- password section -->
+              <div class="pass">
+                <label for="">password:</label>
+                <input type=" password" name="" id="" />
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="" />
+                <label for="checkbox">fotget password.</label>
+              </div>
+
+              <!-- login btn -->
+              <button class="btnLogin">Login</button>
+
+              <div>
+                <p>Don't have an account <a href="">Signup</a></p>
+              </div>
+            </div>
+          </form>
+        </main>
       </div>
 
       <footer class="footer">Footer section</footer>
