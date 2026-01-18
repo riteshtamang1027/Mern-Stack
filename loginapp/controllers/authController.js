@@ -22,10 +22,7 @@ try {
 
     const token  =  jwt.sign({id:userName._id},process.env.JWT_SECRET,{expiresIn:"1d"})
 
-    return res.status(201).json({
-        success:true, message:"Your created successfully."
 
-    })
 
     
 } catch (error) {
