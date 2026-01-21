@@ -4,7 +4,6 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import cookie from "cookie";
 
-
 // Create users
 export const register = async (req, res) => {
   const { username, email, password } = req.body;
@@ -37,8 +36,7 @@ export const register = async (req, res) => {
       maxAge: 1 * 60 * 60 * 1000,
     });
 
-    return res.json({success:true})
-
+    return res.json({ success: true });
   } catch (error) {
     return res
       .status(500)
@@ -46,11 +44,10 @@ export const register = async (req, res) => {
   }
 };
 
-
 // login user
 export const login = async (req, res) => {
   const { email, password } = req.body;
-//   check email and password is enter or not 
+  //   check email and password is enter or not
   if (!email || !password) {
     return res.json({
       success: false,
@@ -58,11 +55,11 @@ export const login = async (req, res) => {
     });
   }
 
-//   if email and password enter then run this section
+  //   if email and password enter then run this section
   try {
     // Here, to find user from their email
     const user = await userModel.findOne({ email });
-// Check that email user is available or not
+    // Check that email user is available or not
     if (!user) {
       return res.json({ success: false, message: "Invalide email." });
     }
@@ -86,7 +83,24 @@ export const login = async (req, res) => {
       maxAge: 1 * 60 * 60 * 1000,
     });
 
-    return res.json({success:true})
+    return res.json({ success: true });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
+export const logOut = async (req, res) => {
+  try {
+    res.clearCookie("token", {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: process.env.NODE_ENV == "production" ? "none" : "strict",
+      maxAge: 1 * 60 * 60 * 1000,
+    });
+    return res.json({success:true, message:"logout successfull."})
   } catch (error) {
     return res.status(500).json({
       success: false,
