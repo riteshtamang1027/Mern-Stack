@@ -1,20 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hero Section</title>
-  <link rel="stylesheet" href="../style/index.css">
-</head>
-<body>
-  <div class="container">
-<img class="backgImage" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsfGVufDB8fDB8fHww" alt="">
-    
-  </div>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="../style/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="backgImage"
+        src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsfGVufDB8fDB8fHww"
+        alt=""
+      />
+    </div>
+  </body>
 </html>
-
 
 <!-- 
 Display -> it controls how an element is rendered on the page. 
@@ -61,10 +62,35 @@ display: flex -> it gives us flexibility/flexible box layout
             default : flex-wrap: nowrap:
                  - it tells a flex container whether items should stay on one line(nowrap) or flow onto multiple lines(wrap) when they run out of space. 
                  
-                 
+
+               2026, Feb-2
+position : static (it is by default)
+static-Default
+ -element stay in flow.
+ -cannot be moved by top/left/right/bottom
+
+relative - element stays in flow but can be shifted.
+  -It moves relative to it's original positon 
+  -the space occupied stays there.
+absolute - element is removed from it's normal flow.
+  - it looks for it's nearest positioned and ancestor (non-static ancestor)
+  -if none found, the viewport becomes the reference.
+  -the ancestor becomes the reference.
+
+  fixed - Like absolute but , the coordinate is always the viewport.
+   - It doesn't care about parents.
+   -It doesn't move when scrolling.
+   - It is premanently pinned to the screen.
+
+sicky - it has a dynamic coordinate system.
+ - it acts like relative in normal flow, bu when scrolling, it reaches threshold and switches to fixed.
+ - it is limited by it's parent's box, meaning it cannot escape it's container.
+
+we have top, left , right that accepts value.
+
+z-index - when two or more items are stacked on each other, we can use z-index to determine who comes first and who goes to last.
+
+
+
                  
 -->
-
-
-
-

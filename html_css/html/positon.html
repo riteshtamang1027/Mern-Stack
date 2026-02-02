@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: aqua;
+        border-radius: 12px;
+        position: relative;
+        top: 20px;
+        left: 100px;
+      }
+
+      .box2 {
+        height: 400px;
+        width: 400px;
+        background-color: rgb(204, 224, 224);
+        border-radius: 12px;
+        position: relative;
+        top: 20px;
+        left: 100px;
+        padding: 12px;
+      }
+      .badge {
+        padding: 12px;
+        background-color: rgb(225, 73, 73);
+        color: white;
+        border-radius: 8px;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+      }
+      .header_se {
+        position: fixed;
+        background-color: aliceblue;
+        width: 100%;
+        top: 0px;
+        font-size: 32px;
+        z-index: 10;
+        padding: 12px;
+      }
+
+      .main-body {
+        width: 100vw;
+        height: screen;
+        margin-top: 80px;
+        font-size: 24px;
+        margin-bottom: 60px;
+        padding: 20px;
+        /* position: relative; */
+      }
+        .box3 {
+        height: 60px;
+        width: 60px;
+        background-color: rgb(155, 105, 191);
+        border-radius: 12px;
+        position: sticky;
+        top: 200px;
+        right:12px;
+        padding-left:1rem ;
+      }
+      section{
+        margin-top: 80px;
+        font-size: 24px;
+      }
+     section .header_section{
+        background-color: rgb(103, 103, 10);
+        color: white;
+        padding: 8px;
+        position: sticky;
+        top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="header_se">This is a Header</header>
+
+  <section>
+      <p>This is section </p>
+      <p>This is section </p>
+      <p>This is section </p>
+      <p>This is section </p>
+      <p>This is section </p>
+      <header class="header_section">This is sticky header</header>
+    <p>This is section </p>
+    <p>This is section </p>
+    <p>This is section </p>
+    <p>This is section </p>
+    <p>This is section </p>
+
+  </section>
+
+
+
+    <div class="main-body">
+      <p class="first_item">Something</p>
+      <div class="box"></div>
+
+      <p>Something</p>
+
+      <div class="box2">
+        <p>Something</p>
+        <span class="badge">NEW</span>
+        <p>Something</p>
+      </div>
+
+      <div class="box3"></div>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+        <p>Something</p>
+
+
+
+
+    </div>
+  </body>
+</html>
