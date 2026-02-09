@@ -8,6 +8,7 @@
       body {
         padding: 0;
         margin: 0;
+        background-color: blue;
       }
       .box {
         height: 300px;
@@ -77,6 +78,18 @@
         padding: 8px;
         position: sticky;
         top: 80px;
+      }
+      @media(max-width:600px){
+        body{
+        background-color: rgb(26, 185, 132);
+        }  
+      }
+
+      @media (min-width:600px) and (max-width:900px){
+        body{
+        background-color: rgb(172, 140, 35);
+
+        }
       }
     </style>
   </head>
