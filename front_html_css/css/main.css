@@ -7,8 +7,6 @@ body {
 
 }
 .main_container{
-  border: 1px solid rgb(31, 29, 29);
   flex: 1;
-  padding: 0rem 4rem;
-
+  padding: 0rem 5rem;
 }
