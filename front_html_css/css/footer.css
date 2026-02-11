@@ -30,12 +30,18 @@
   gap: 16px;
 }
 
-.help_info div {
+.help_info li {
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 16px;
   opacity: 80%;
+  transition: all 0.3s linear;
+}
+.help_info li:hover{
+  color: rgb(46, 142, 226);
+  cursor: pointer;
 }
 
 .right_mid {
@@ -62,6 +68,11 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  transition: all 0.3s linear;
+}
+.country_list li:hover {
+  color: rgb(46, 142, 226);
+  cursor: pointer;
 }
 
 .media_list {
@@ -75,6 +86,12 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  transition: all 0.3s linear;
+}
+.media_list li:hover{
+  color: rgb(46, 142, 226);
+  cursor: pointer;
+
 }
 
 .bottom_footer{
