@@ -2,7 +2,8 @@
 import userModel from "../models/users_model.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-import cookie from "cookie";
+// import cookie from "cookie";
+import transporter from "../configuration/nodemailer.js";
 
 // Create users
 export const register = async (req, res) => {
@@ -36,13 +37,24 @@ export const register = async (req, res) => {
       maxAge: 1 * 60 * 60 * 1000,
     });
 
-    return res.json({ success: true });
-  } catch (error) {
+    // Sending welcome email
+    const mail_options={
+      from:process.env.SMTP_EMAIL,
+      to:email,
+      sub:'Welcome to new mail.',
+      text:`Welcome to this website. your account has been created with email id:${email}`
+    }
+    await transporter.sendMail(mail_options);
+
+    return res.json({ success: true,data:newUser });
+  } catch (error) { 
+    console.log(error)
     return res
-      .status(500)
-      .json({ success: false, message: "Internal server error" });
+      .status(500) 
+      .json({ success: false, message: "Internal server error" },error);
   }
 };
+
 
 // login user
 export const login = async (req, res) => {
@@ -92,6 +104,8 @@ export const login = async (req, res) => {
   }
 };
 
+
+// logout section
 export const logOut = async (req, res) => {
   try {
     res.clearCookie("token", {
