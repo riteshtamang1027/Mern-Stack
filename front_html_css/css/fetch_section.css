@@ -1,0 +1,38 @@
+.main_des{
+    margin-top: 4rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    
+}
+.sub_des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+.sub_des i{
+    color: rgb(46, 142, 226);
+    font-size: 48px;
+}
+.textsec{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.textsec .p1{
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.textsec .p2{
+    font-size: 18px;
+    opacity: 80%;
+     padding: 0;
+    margin: 0;
+}
