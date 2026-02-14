@@ -41,7 +41,7 @@ overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   padding: 4px 24px;
+   padding: 16px 24px;
    background-color: white;
    border-radius: 56px;
    border: 1px solid rgb(46, 142, 226);
@@ -52,18 +52,28 @@ overflow: hidden;
     gap: 16px;
 }
 .sub_item i{
-    color: rgb(155, 154, 154);
+    color: rgb(46, 142, 226);
+    font-size: 32px;
+}
+.text{
+display: flex;
+flex-direction: column;
+gap: 8px;
 }
 .text .text1{
     font-size: 18px;
     opacity: 85%;
     font-weight: 600;
+    padding: 0;
+    margin: 0;
 }
 
 .text .text2{
-    font-size: 20px;
+    font-size: 16px;
     opacity: 70%;
     font-weight: 400;
+     padding: 0;
+    margin: 0;
 }
 
 .right_item{
