@@ -1,0 +1,153 @@
+.maincontainer{
+    margin: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 32px;
+}
+.herder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.herder p{
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 85%;
+}
+.slidearrow{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.slidearrow button{
+    /* padding: 16px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid white ;
+    background-color: rgb(46, 142, 226);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+.slidearrow button:hover{
+     color: rgb(46, 142, 226);
+    background-color: white;
+    border: 1px solid rgb(46, 142, 226);
+    scale: 1.2;
+
+
+}
+.slidearrow button i{
+    font-size: 24px;
+}
+.main_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catmain{
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: fit-content;
+    color: white;
+    max-height: 54vh;
+    cursor: pointer;
+}
+.catmain img{
+    height: 54vh;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.catmain:hover img {
+    transform: scale(1.08);  /* slightly zoom */
+}
+.stylediv{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 40%;
+}
+.catmain .info{
+    position: absolute;
+    padding: 4px 8px;
+    bottom: 1%;
+    left: 1%;
+}
+
+.info .cname{
+    font-size: 32px;
+    font-weight: bold;
+}
+.info .desc{
+    font-size: 20px;
+    font-weight: 400;
+}
+.info .btn{
+    border-radius: 24px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.info .btn:hover {
+    background-color: white;
+    color: rgb(46, 142, 226);
+    border: 1px solid rgb(46, 142, 226);
+}
+
+.info .desc, .info .btn{
+    opacity: 0;
+    transform: translateY(70px);
+}
+.catmain:hover .desc, .catmain:hover .btn{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.info{
+    transform: translateY(120px);
+    transition: all 0.5s linear;
+}
+.catmain:hover .info{
+    transform: translateY(0);
+}
+
+.maincontainer .desti_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincontainer .desti {
+    padding: 16px 24px;
+    border-radius: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    width: max-content;
+    border: 1px solid white ;
+    color: white;
+    background-color: rgb(46, 142, 226);
+    transition: all 0.3s linear;
+}
+
+.maincontainer .desti:hover{
+      border: 1px solid rgb(46, 142, 226) ;
+    color: rgb(46, 142, 226);
+    background-color:white ;
+
+}
