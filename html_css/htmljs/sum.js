@@ -15,3 +15,10 @@ Amount();
 console.log("Hello World!");
 
 
+
+
+const p = document.getElementsByTagName('p')
+console.log(p)
+p[0].innerHTML ="Hello universe!"
+
+
