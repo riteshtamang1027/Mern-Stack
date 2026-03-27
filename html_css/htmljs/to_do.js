@@ -38,35 +38,52 @@ function addTodo(){
 
 
 
-const addNewTask = ()=>{
 
-    const inputElement = document.getElementById('task');
 
-    const yourtext = inputElement.value.trim();
-    // const checkBox = document.createElement('input');
 
-    if(!yourtext){
-        return;
-    }
 
-    const checkBox = document.createElement('input')
 
-    const item = document.createElement('p')
+function handleTask (){
 
-    item.textContent = yourtext;
-    // document.getElementById
-    console.log(yourtext);
+const inputElement = document.getElementById("task");
+ 
+const insertTask = inputElement.value.trim();
+const getTime = taskGenerateTime();
 
-    document.getElementById('taskList').appendChild(item)
 
-    inputElement.value = ''
+if(!insertTask){
+    return;
+}
+
+const addTask = taskFormate(insertTask,getTime);
+
+document.getElementById("taskList").appendChild(addTask)
+inputElement.value = '';
 
 }
 
 
- const nowDate = new Date()
-        console.log(nowDate)
-        document.getElementById('display-date').textContent = nowDate.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'})
+function taskFormate (task,time){
+    const div = document.createElement('div');
+    div.classList.add("task-list")
 
+    div.innerHTML = `
+     <div class="list_ckeck">
+          <input class="checked" type="checkbox" />
+          <p class="task">${task}</p>
+        </div>
+        <span class="time">${time}</span>
+    
+    `
+    return(div)
+}
 
+function taskGenerateTime(){
+    return  new Date().toLocaleTimeString('en-US',{hour:"numeric",minute:"2-digit"});
+}
 
+const nowDate = new Date();
+
+console.log(nowDate);
+
+document.getElementById('display-date').textContent= nowDate.toLocaleDateString("en-US",{weekday:'long',month:'long',day:"numeric"}) 
