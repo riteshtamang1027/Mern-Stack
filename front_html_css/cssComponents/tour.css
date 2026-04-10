@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0rem 4rem;
+}
+
+.header{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+.fetbtn button{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: rgb(232, 196, 232);
+    color: rgb(156, 18, 18);
+    border: 1px solid rgb(232, 196, 232);
+}
+.headtext{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left_text{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: gray;
+}
+.left_text ul{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+.right_item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(47, 46, 46);
+    transition: all 0.5s linear;
+}
+.right_item:hover{
+    color: rgb(52, 143, 222);
+
+}
