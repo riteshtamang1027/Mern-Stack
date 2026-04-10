@@ -2,6 +2,11 @@ body{
     margin: 0;
     padding: 0rem 4rem;
 }
+.main_container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .header{
     font-size: 36px;
@@ -45,4 +50,74 @@ body{
 .right_item:hover{
     color: rgb(52, 143, 222);
 
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: full;
+    height: 64vh;
+    overflow: hidden;
+    gap: 24px;
+}
+.image .bannerImage{
+    width: 64vw;
+    height: 64vh;
+    object-fit: cover;
+    border-radius: 16px;
+   
+}
+.subimage{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 64vh;
+}
+
+.subimage img{
+    width: 28vw;
+    
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 16px;
+   
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: full;
+    /* border: 1px solid black; */
+}
+
+.left_side_div{
+    width: 64vw;
+    /* border: 1px solid black; */
+}
+.right_div{
+    width: 28vw;
+    border: 1px solid black;
+
+}
+
+.icon_div{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(236, 235, 235);
+    padding: 16px;
+    border-radius: 12px;
+    
+}
+.icon_div span{
+    color: rgb(104, 103, 103);
+    font-size: 20px;
+}
+.icon_div i{
+    color: rgb(52, 143, 222);
+    font-size: 18px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
