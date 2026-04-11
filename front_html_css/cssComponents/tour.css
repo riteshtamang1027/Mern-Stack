@@ -51,6 +51,12 @@ body{
     color: rgb(52, 143, 222);
 
 }
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0;
+}
 .image{
     display: flex;
     align-items: center;
@@ -76,7 +82,6 @@ body{
 
 .subimage img{
     width: 28vw;
-    
     height: 30vh;
     object-fit: cover;
     border-radius: 16px;
@@ -87,17 +92,13 @@ body{
     justify-content: space-between;
     gap: 24px;
     width: full;
-    /* border: 1px solid black; */
 }
 
 .left_side_div{
     width: 64vw;
-    /* border: 1px solid black; */
-}
-.right_div{
-    width: 28vw;
-    border: 1px solid black;
-
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .icon_div{
@@ -108,9 +109,16 @@ body{
     border-radius: 12px;
     
 }
+.icon_div .icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 .icon_div span{
-    color: rgb(104, 103, 103);
-    font-size: 20px;
+    color: black;
+    opacity: 70%;
+    font-size: 18px;
+    word-spacing: 2px;
 }
 .icon_div i{
     color: rgb(52, 143, 222);
@@ -120,4 +128,60 @@ body{
     display: flex;
     align-items: center;
     gap: 4px;
+}
+.text_section{
+    background-color: rgb(242, 244, 244);
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid rgb(200, 226, 250);
+}
+.overview_text .head{
+    font-size: 32px;
+    margin: 0;
+    font-width: 800;
+}
+.about_overview{
+    font-size: 19px;
+    color: black;
+    opacity: 70%;
+    line-height: 1.5;
+    word-spacing: 4px;
+}
+.about_overview .listed{
+    line-height: 1.8;
+}
+.list li{
+    list-style: none;
+    line-height: 2;
+     font-size: 19px;
+    color: black;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.list .check i{
+    color: rgb(3, 125, 232);
+    font-size: 14px;
+}
+.list .cross i{
+    color: rgb(208, 9, 9);
+    font-size: 14px;
+
+}
+.list{
+    display: flex;
+    gap: 32px;
+}
+.hr {
+      width: 100%;
+    border: none !important;
+    height: 1px !important;
+    background-color: rgb(175, 214, 248) !important;
+}
+
+.right_div{
+    width: 28vw;
+    border: 1px solid rgb(175, 214, 248) ;
+    border-radius: 16px;
 }
