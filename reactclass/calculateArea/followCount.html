@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Count the Followers</title>
-</head>
-<body>
-    <h1>Count the Followers</h1>
+  </head>
+  <body>
+    <h1>Interactive Counter</h1>
+    <h2>Account Holder Name: Ritesh Tamang</h2>
+    <p>Followers: <span id="count">0</span></p>
+
+    <hr />
+    <h3>Click On button to follow</h3>
+
     <button onclick="increasingFollow()">Follow</button>
-    <button onclick="decreaseFollow()" >Unfollow</button>
-    <p>Your followers: <span id="count">0</span></p>
+    <button onclick="decreaseFollow()">Unfollow</button>
     <script src="followCount.js"></script>
-</body>
+  </body>
 </html>
