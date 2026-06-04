@@ -1,3 +1,5 @@
+/* Commit Switch */
+
 const tweetInput = document.getElementById("tweet-input");
 const charCounter = document.getElementById("char-counter");
 const postBtn = document.getElementById("post-btn");
