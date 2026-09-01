@@ -44,3 +44,19 @@ function chooseOperator(selectOperator) {
 
   updateDisplay();
 }
+
+// track all the buttons
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const value = button.textContent;
+
+    if (!isNaN(value) || value === ".") {
+      inputNumber(value);
+    } else if (button.classList.contains("operator")) {
+      chooseOperator(value);
+    } else if (button.classList.contains("equal")) {
+      calculate();
+    }
+  });
+});
