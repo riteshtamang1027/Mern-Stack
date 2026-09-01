@@ -12,7 +12,7 @@ let previousInput = null;
 let operator = null;
 let shouldResetDisplay = false;
 
-// handles numbers 
+// handles numbers
 
 function inputNumber(number) {
   if (currentInput === 0 || shouldResetDisplay) {
@@ -24,15 +24,14 @@ function inputNumber(number) {
   updateDisplay();
 }
 
-// handle decimal number 
+// handle decimal number
 
-function inputDecimal(){
-  if(shouldResetDisplay){
+function inputDecimal() {
+  if (shouldResetDisplay) {
     currentDisplay = ".";
     shouldResetDisplay = false;
-  }
-  else if(!currentInput === "."){
-    currentInput +=".";
+  } else if (!currentInput === ".") {
+    currentInput += ".";
   }
   updateDisplay();
 }
@@ -41,7 +40,7 @@ function inputDecimal(){
 function updateDisplay() {
   currentDisplay.textContent = currentInput;
 
-  if (previousDisplay !== null && operator !== null ) {
+  if (previousDisplay !== null && operator !== null) {
     previousDisplay.textContent = `${previousInput} ${operator}`;
   } else {
     previousDisplay.textContent = "";
@@ -56,7 +55,6 @@ function chooseOperator(selectOperator) {
 
   updateDisplay();
 }
-
 
 // actual calculation section
 function calculate() {
@@ -101,19 +99,18 @@ function calculate() {
   updateDisplay();
 }
 
-
-function percentage(){
-  if(currentInput === "Error"){
+// percentage calculation
+function percentage() {
+  if (currentInput === "Error") {
     return;
   }
-  currentInput = String(Number(currentInput)/100);
+  currentInput = String(Number(currentInput) / 100);
   updateDisplay();
 }
 
+// handling clear the previous display
 
-// handling clear the previous display 
-
-function clearCalculator(){
+function clearCalculator() {
   currentInput = 0;
   previousInput = null;
   operator = null;
@@ -121,9 +118,14 @@ function clearCalculator(){
   shouldResetDisplay = false;
 
   updateDisplay();
-
 }
 
+function removeNumber() {
+
+  currentInput = currentInput.slice(0, -1);
+
+  updateDisplay();
+}
 // track all the buttons
 
 buttons.forEach((button) => {
@@ -132,22 +134,18 @@ buttons.forEach((button) => {
 
     if (!isNaN(value) || value === ".") {
       inputNumber(value);
-    } 
-    else if(value === "."){
+    } else if (value === ".") {
       inputDecimal();
-    }
-    else if(value === "%"){
+    } else if (value === "%") {
       percentage();
-
-    }
-    
-    else if (button.classList.contains("operator")) {
+    } else if (button.classList.contains("operator")) {
       chooseOperator(value);
     } else if (button.classList.contains("equal")) {
       calculate();
-    }
-    else if (value === "AC"){
+    } else if (value === "AC") {
       clearCalculator();
+    } else if (value === "x") {
+      removeNumber();
     }
   });
 });
