@@ -109,6 +109,21 @@ function percentage(){
   currentInput = String(Number(currentInput)/100);
   updateDisplay();
 }
+
+
+// handling clear the previous display 
+
+function clearCalculator(){
+  currentInput = 0;
+  previousInput = null;
+  operator = null;
+
+  shouldResetDisplay = false;
+
+  updateDisplay();
+
+}
+
 // track all the buttons
 
 buttons.forEach((button) => {
@@ -130,6 +145,9 @@ buttons.forEach((button) => {
       chooseOperator(value);
     } else if (button.classList.contains("equal")) {
       calculate();
+    }
+    else if (value === "AC"){
+      clearCalculator();
     }
   });
 });
